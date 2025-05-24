@@ -38,3 +38,9 @@ console.log(nombres)
 nombres = ()=> console.log(true)
 
 console.log(nombres);
+
+// conclusion
+// les any et unknown sont a peut pres similaire 
+
+// types never 
+// c'est un type qui est utilisé pour les valeurs qui ne peuvent pas arriver
