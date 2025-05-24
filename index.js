@@ -92,3 +92,25 @@ var index_signature = {};
 index_signature.Name_personnal = "this is an exmaple of objet types with typescript";
 index_signature.Name_professionel = "using ts";
 console.log(index_signature);
+// enum
+// enum est un type qui permet de définir un ensemble de valeurs
+// qui peuvent être utilisées dans un programme
+// par exemple si on a un enum qui définit les jours de la semaine
+// on peut utiliser les valeurs de l'enum pour définir la valeur d'une variable
+var CardinalDirections;
+(function (CardinalDirections) {
+    CardinalDirections["North"] = "North";
+    CardinalDirections["East"] = "East";
+    CardinalDirections["South"] = "South";
+    CardinalDirections["West"] = "West";
+})(CardinalDirections || (CardinalDirections = {}));
+var test;
+(function (test) {
+    test[test["test1"] = 4] = "test1";
+    test[test["test2"] = 5] = "test2";
+    test[test["test3"] = 6] = "test3";
+    test[test["test4"] = 7] = "test4";
+})(test || (test = {}));
+console.log(test);
+var day = CardinalDirections;
+console.log(day.East);
