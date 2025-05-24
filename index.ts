@@ -20,3 +20,21 @@ console.log(variables);
 let nombres : unknown ; // une alternative a any 
 
 console.log(nombres = "this is yann hallage and her simple code " + true)
+
+
+// differente maniere de manipulation 
+
+nombres = {
+    name : "yann hallage",
+    age : 2000,
+    isDeveloper : true
+
+}
+
+console.log(nombres)
+
+// type unknown mais ici on le fais avec une fonction
+// deja une variable en ts ou js avancer , on peut passer une fonction dans une variable 
+nombres = ()=> console.log(true)
+
+console.log(nombres);
