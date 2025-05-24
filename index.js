@@ -1,17 +1,16 @@
-// simple types 
-// number , boolean , string 
-var nombre = 2000;
-var edad = 30;
-var nombreCompleto = "Juan Carlos";
-var edadCompleta = "30 años";
-var nombreCompleto2 = "Mi nombre es ".concat(nombre, " y tengo ").concat(edad);
-var Myname = 20001;
-var myname_second;
-// boolean 
-var estaVacio;
-estaVacio = true;
-myname_second = "yann hallage " + 2000 + true;
-console.log(myname_second);
-Myname = 20001;
-// showing 
-console.log(nombreCompleto2 + " and booleans : " + estaVacio);
+// les types speciaux
+// deja ici on veut faire reference a certain types 
+// comme le any qui accept n'importe quel type possible
+var nombre;
+nombre = 2000;
+nombre = "yann";
+nombre = true;
+console.log(nombre);
+// un autre exemple avec du any 
+var variables = "le nombre total est : " + 2000 + "disponibilité : " + true;
+console.log(variables);
+// unknown
+// c'est un type qui est similaire a any mais qui est plus sécurisé
+// on peut pas faire de manipulation sur un type unknown sans faire une vérification de type
+var nombres; // une alternative a any 
+console.log(nombres = "this is yann hallage and her simple code " + true);

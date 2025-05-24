@@ -1,20 +1,22 @@
-// simple types 
-// number , boolean , string 
 
-let nombre : number = 2000; 
-let edad : number = 30;
-let nombreCompleto : string = "Juan Carlos";
-let edadCompleta : string = "30 años";
-let nombreCompleto2 : string = `Mi nombre es ${nombre} y tengo ${edad}`
-let Myname = 20001;
-let myname_second: any ; 
-// boolean 
-let estaVacio : boolean;
-estaVacio = true;
+// les types speciaux
+// deja ici on veut faire reference a certain types 
+// comme le any qui accept n'importe quel type possible
 
-myname_second = "yann hallage " + 2000 + true
-console.log(myname_second);
-Myname = 20001
-// showing 
+let nombre : any ;
+nombre = 2000;
+nombre = "yann";
+nombre = true;
+console.log(nombre)
 
-console.log(nombreCompleto2 + " and booleans : " + estaVacio)
+// un autre exemple avec du any 
+let variables : any = "le nombre total est : " + 2000 + "disponibilité : " + true
+console.log(variables);
+
+
+// unknown
+// c'est un type qui est similaire a any mais qui est plus sécurisé
+// on peut pas faire de manipulation sur un type unknown sans faire une vérification de type
+let nombres : unknown ; // une alternative a any 
+
+console.log(nombres = "this is yann hallage and her simple code " + true)
