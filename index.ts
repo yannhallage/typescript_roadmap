@@ -50,4 +50,44 @@ console.log(nombres);
 // définies ou qui sont nulles
 let valeur_pas_definie : undefined = undefined;
 
-// 
+
+// object types
+// array
+
+const tableau_one : string[] = [] //ici dans ce cas la variable est de type Array et de valeur string
+tableau_one.push('yann hallage');
+tableau_one.push('hallage');
+tableau_one.push('yann');
+tableau_one.push('hamed');
+console.log(tableau_one);
+
+const tableau_two : number[] = [];
+
+tableau_two.push(1);
+tableau_two.push(2);
+tableau_two.push(3);
+tableau_two.push(4);
+console.log(tableau_two);
+
+const tableau_three : any[] = [];
+tableau_three.push('yann hallage');
+tableau_three.push(1);
+tableau_three.push(true);
+tableau_three.push(null);
+tableau_three.push(undefined);
+console.log(tableau_three);
+
+
+// tuples
+// c'est un type qui permet de définir un tableau avec un nombre fixe de valeurs
+// les valeurs peuvent être de différents types
+const Nom : string = 'HALLAGE';
+const age : number = 24;
+const est_marie : boolean = false;
+
+const some_text : any = `mon nom est ${Nom}, et j'ai ${age} , celibataire : ${est_marie}`
+let tuples_variable: [number,string,boolean,any]
+
+tuples_variable=[1,'yann hallage',true,some_text];
+
+console.log(tuples_variable)
