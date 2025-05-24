@@ -44,3 +44,10 @@ console.log(nombres);
 
 // types never 
 // c'est un type qui est utilisé pour les valeurs qui ne peuvent pas arriver
+
+// undefined and null
+// undefined et null sont des types speciaux qui sont utilisés pour les valeurs qui ne sont pas
+// définies ou qui sont nulles
+let valeur_pas_definie : undefined = undefined;
+
+// 
