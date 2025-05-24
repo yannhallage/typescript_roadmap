@@ -64,3 +64,31 @@ var some_text = "mon nom est ".concat(Nom, ", et j'ai ").concat(age, " , celibat
 var tuples_variable;
 tuples_variable = [1, 'yann hallage', true, some_text];
 console.log(tuples_variable);
+// object types 
+// parlons des objets ici
+var types_example = {
+    name: 'yann hallage',
+    age: 24,
+    is_married: false
+};
+types_example.name = 'HALLAGE CEDRICK';
+if (types_example) {
+    console.log(types_example);
+}
+// facultatif 
+var types_examples = {
+    name: 'hamed yann hallage'
+};
+types_examples.age = 23;
+types_examples.is_married = true;
+console.log(types_examples);
+// index signature 
+// index signature est un type qui permet de définir le type de valeur qui peut être stock
+// dans un objet
+// par exemple si on a un objet qui stock des nombres et des chaines de caractères
+// on peut définir un index signature qui permet de stocker des nombres et des chaines
+// de caractères dans l'objet
+var index_signature = {};
+index_signature.Name_personnal = "this is an exmaple of objet types with typescript";
+index_signature.Name_professionel = "using ts";
+console.log(index_signature);
