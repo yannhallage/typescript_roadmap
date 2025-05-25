@@ -1,14 +1,6 @@
 // les types speciaux
 // deja ici on veut faire reference a certain types 
 // comme le any qui accept n'importe quel type possible
-var nombre;
-nombre = 2000;
-nombre = "yann";
-nombre = true;
-console.log(nombre);
-// un autre exemple avec du any 
-var variables = "le nombre total est : " + 2000 + "disponibilité : " + true;
-console.log(variables);
 // unknown
 // c'est un type qui est similaire a any mais qui est plus sécurisé
 // on peut pas faire de manipulation sur un type unknown sans faire une vérification de type
@@ -97,20 +89,20 @@ console.log(index_signature);
 // qui peuvent être utilisées dans un programme
 // par exemple si on a un enum qui définit les jours de la semaine
 // on peut utiliser les valeurs de l'enum pour définir la valeur d'une variable
-var CardinalDirections;
-(function (CardinalDirections) {
-    CardinalDirections["North"] = "North";
-    CardinalDirections["East"] = "East";
-    CardinalDirections["South"] = "South";
-    CardinalDirections["West"] = "West";
-})(CardinalDirections || (CardinalDirections = {}));
-var test;
-(function (test) {
-    test[test["test1"] = 4] = "test1";
-    test[test["test2"] = 5] = "test2";
-    test[test["test3"] = 6] = "test3";
-    test[test["test4"] = 7] = "test4";
-})(test || (test = {}));
-console.log(test);
-var day = CardinalDirections;
-console.log(day.East);
+var StatusCodes;
+(function (StatusCodes) {
+    StatusCodes[StatusCodes["NotFound"] = 404] = "NotFound";
+    StatusCodes[StatusCodes["Success"] = 200] = "Success";
+    StatusCodes[StatusCodes["Accepted"] = 202] = "Accepted";
+    StatusCodes[StatusCodes["BadRequest"] = 400] = "BadRequest";
+})(StatusCodes || (StatusCodes = {}));
+// en plus des attributs de ses attribut il a la possibilité d'utiliser les  attributs de Clothes
+var __anExamples = {
+    shoes: "noir",
+    pantalon: "bleu",
+    couleur: "noir",
+    nombre: 2,
+    personne: "homme et femme"
+};
+console.log(__anExamples);
+// forcement utiliser les attributs lors d'un extends 

@@ -146,6 +146,69 @@ console.log(index_signature)
 // par exemple si on a un enum qui définit les jours de la semaine
 // on peut utiliser les valeurs de l'enum pour définir la valeur d'une variable
 
+enum StatusCodes {
+  NotFound = 404,
+  Success = 200,
+  Accepted = 202,
+  BadRequest = 400
+}
 
 
+// en gro ce que je retiens est que le enum ou les valeurs du enums sont comme des constantes 
+//  et le truc est que ça met directement dans l'orde
+
+
+// aliases and interfaces 
+// aliases et interfaces sont des types qui permettent de définir des types
+// qui peuvent être utilisés dans un programme
+// par exemple si on a un type qui définit un objet avec des propriétés
+// on peut utiliser l'alias pour définir un type qui pointe vers l'objet
+// et l'interface pour définir les propriétés de l'objet
+// aliases et interfaces sont utilisés pour définir des types qui peuvent être utilisés
+
+// en gro cst comme des types que tu cree 
+// et qui sont utilisés dans le code
+
+// creation de types
+type couleur = string;
+type personne = string;
+type nombre = number;
+
+
+
+// parlons des interfaces
+// interfaces sont des types qui permettent de définir les propriétés d'un objet
+// elles sont utilisées pour définir les propriétés d'un objet et pour vérifier 
+// si l'objet satisfait aux propriétés définies par l'interface
+// en gro cst comme des contraintes sur les objets que tu cree
+// et qui sont utilisées pour vérifier si l'objet satisfait aux contraintes
+// creation d'interface
+
+interface Clothes {
+    couleur : string ;
+    nombre : number ;
+    personne : string ;
+
+}
+
+
+interface others extends Clothes{
+    shoes: string,  
+    pantalon: string
+
+}
+
+// en plus des attributs de ses attribut il a la possibilité d'utiliser les  attributs de Clothes
+
+const __anExamples : others = {
+    shoes : "noir",
+    pantalon : "bleu",
+    couleur : "noir",
+    nombre : 2,
+    personne : "homme et femme"
+}
+
+console.log(__anExamples)
+
+// forcement utiliser les attributs lors d'un extends 
 
