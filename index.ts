@@ -250,3 +250,10 @@ const Myfunction_second = (parmas: number): any => {
     return console.log(parmas)
 }
 
+
+
+
+// une simple conclusion
+// en dehors des types basics on a 
+// interface ,type ,aliase, enum et quelque bonne pratique des fonctions 
+
