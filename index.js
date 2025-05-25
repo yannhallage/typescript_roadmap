@@ -116,7 +116,23 @@ console.log(MaVariable);
 // passons au fonction 
 // les fonctions sont des types qui permettent de définir les propriétés d'un
 // elles sont utilisées pour définir les propriétés d'un objet et pour vérifier
-var executer = function () {
-    return console.log(12 + 13);
+var executer = function (a, b, c) {
+    return console.log(a + b);
 };
-executer();
+executer(12, 20);
+// parlons ici de certaines type de fonction un peu different
+var ajouterValeur = function () {
+    var rest = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        rest[_i] = arguments[_i];
+    }
+    return rest.map(function (e) { return console.log(e); });
+};
+ajouterValeur(12);
+var Myfunction = function () {
+    console.log("je suis une fonction qui ne retourne rien");
+};
+var Myfunction_second = function (parmas) {
+    // console.log("je suis une fonction qui ne retourne rien")
+    return console.log(parmas);
+};

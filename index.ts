@@ -228,8 +228,25 @@ console.log(MaVariable)
 // les fonctions sont des types qui permettent de définir les propriétés d'un
 // elles sont utilisées pour définir les propriétés d'un objet et pour vérifier
 
-const executer = () => {
-    return console.log(12 + 13)
+const executer = (a: number, b: number, c?: string | boolean): unknown => {
+    return console.log(a + b)
 }
 
-executer();
+executer(12, 20);
+
+// parlons ici de certaines type de fonction un peu different
+
+const ajouterValeur = (...rest: number[]) => {
+    return rest.map((e) => console.log(e));
+}
+
+ajouterValeur(12)
+
+const Myfunction = (): void => {
+    console.log("je suis une fonction qui ne retourne rien")
+}
+const Myfunction_second = (parmas: number): any => {
+    // console.log("je suis une fonction qui ne retourne rien")
+    return console.log(parmas)
+}
+
