@@ -147,10 +147,10 @@ console.log(index_signature)
 // on peut utiliser les valeurs de l'enum pour définir la valeur d'une variable
 
 enum StatusCodes {
-  NotFound = 404,
-  Success = 200,
-  Accepted = 202,
-  BadRequest = 400
+    NotFound = 404,
+    Success = 200,
+    Accepted = 202,
+    BadRequest = 400
 }
 
 
@@ -185,30 +185,51 @@ type nombre = number;
 // creation d'interface
 
 interface Clothes {
-    couleur : string ;
-    nombre : number ;
-    personne : string ;
+    couleur: string;
+    nombre: number;
+    personne: string;
 
 }
 
 
-interface others extends Clothes{
-    shoes: string,  
+interface others extends Clothes {
+    shoes: string,
     pantalon: string
 
 }
 
 // en plus des attributs de ses attribut il a la possibilité d'utiliser les  attributs de Clothes
 
-const __anExamples : others = {
-    shoes : "noir",
-    pantalon : "bleu",
-    couleur : "noir",
-    nombre : 2,
-    personne : "homme et femme"
+const __anExamples: others = {
+    shoes: "noir",
+    pantalon: "bleu",
+    couleur: "noir",
+    nombre: 2,
+    personne: "homme et femme"
 }
 
 console.log(__anExamples)
 
 // forcement utiliser les attributs lors d'un extends 
 
+// union
+// union est un type qui permet de définir plusieurs types
+// en gro cst comme des types que tu cree
+// et qui sont utilisées pour définir plusieurs types
+
+let MaVariable: string | number;
+
+MaVariable = 2000;
+
+console.log(MaVariable)
+
+
+// passons au fonction 
+// les fonctions sont des types qui permettent de définir les propriétés d'un
+// elles sont utilisées pour définir les propriétés d'un objet et pour vérifier
+
+const executer = () => {
+    return console.log(12 + 13)
+}
+
+executer();

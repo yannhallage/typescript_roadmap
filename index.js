@@ -106,3 +106,17 @@ var __anExamples = {
 };
 console.log(__anExamples);
 // forcement utiliser les attributs lors d'un extends 
+// union
+// union est un type qui permet de définir plusieurs types
+// en gro cst comme des types que tu cree
+// et qui sont utilisées pour définir plusieurs types
+var MaVariable;
+MaVariable = 2000;
+console.log(MaVariable);
+// passons au fonction 
+// les fonctions sont des types qui permettent de définir les propriétés d'un
+// elles sont utilisées pour définir les propriétés d'un objet et pour vérifier
+var executer = function () {
+    return console.log(12 + 13);
+};
+executer();
