@@ -1,18 +1,14 @@
+import { verification_variable_entree } from "./program_export/verification";
+import { variable_additionner } from './program_export/addition';
 
 
-// just un simple programme avec ts 
-// okay donc ici je vais essayer de creer un code permettant de 
-// resoudre un probleme 
 
+// j'utilise les des fonctions importées 
 
 let variable_entree: any;
-
-const verification_variable_entree = (parmas: any): any => {
-    if (typeof parmas === 'string' || 'number' || 'boolean') {
-        return console.log(typeof parmas)
-    } else {
-        return console.log('la variable n\'est pas de type string, number ou boolean')
-    }
-}
 variable_entree = 222;
-verification_variable_entree(variable_entree);
+verification_variable_entree(variable_entree); //renvoie normalemnt le typeof de la variable en question
+
+
+variable_additionner(12, 12, 12, 12, 12, 12)
+

@@ -1,14 +1,9 @@
-// just un simple programme avec ts 
-// okay donc ici je vais essayer de creer un code permettant de 
-// resoudre un probleme 
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var verification_1 = require("./program_export/verification");
+var addition_1 = require("./program_export/addition");
+// j'utilise les des fonctions importées 
 var variable_entree;
-var verification_variable_entree = function (parmas) {
-    if (typeof parmas === 'string' || 'number' || 'boolean') {
-        return console.log(typeof parmas);
-    }
-    else {
-        return console.log('la variable n\'est pas de type string, number ou boolean');
-    }
-};
 variable_entree = 222;
-verification_variable_entree(variable_entree);
+(0, verification_1.verification_variable_entree)(variable_entree); //renvoie normalemnt le typeof de la variable en question
+(0, addition_1.variable_additionner)(12, 12, 12, 12, 12, 12);
