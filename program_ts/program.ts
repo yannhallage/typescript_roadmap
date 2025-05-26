@@ -1,5 +1,6 @@
 import { verification_variable_entree } from "./program_export/verification";
 import { variable_additionner } from './program_export/addition';
+import { choix_challenge } from "./program_export/challenge";
 
 
 
@@ -12,3 +13,10 @@ verification_variable_entree(variable_entree); //renvoie normalemnt le typeof de
 
 variable_additionner(12, 12, 12, 12, 12, 12)
 
+
+// interface et alias 
+// le truc ici est de les utilisees
+
+// action ou verité
+choix_challenge('verité')
+// 

@@ -6,6 +6,6 @@ var variable_additionner = function () {
     for (var _i = 0; _i < arguments.length; _i++) {
         rest[_i] = arguments[_i];
     }
-    return rest.map(function (e) { return console.log(e * e); });
+    return rest.map(function (e) { return console.log(e); });
 };
 exports.variable_additionner = variable_additionner;
