@@ -257,3 +257,12 @@ const Myfunction_second = (parmas: number): any => {
 // en dehors des types basics on a 
 // interface ,type ,aliase, enum et quelque bonne pratique des fonctions 
 
+
+
+// le DOM
+
+let btn_action = document.querySelector('.btn_action') as HTMLButtonElement
+
+btn_action.addEventListener('click', () => {
+    console.log("je suis un bouton")
+})
