@@ -16,7 +16,6 @@ variable_additionner(12, 12, 12, 12, 12, 12)
 
 // interface et alias 
 // le truc ici est de les utilisees
-
 // action ou verité
 choix_challenge('verité')
 // 
