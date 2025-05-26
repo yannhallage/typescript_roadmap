@@ -6,12 +6,12 @@ import { choix_challenge } from "./program_export/challenge";
 
 // j'utilise les des fonctions importées 
 
-let variable_entree: any;
-variable_entree = 222;
-verification_variable_entree(variable_entree); //renvoie normalemnt le typeof de la variable en question
+// let variable_entree: any;
+// variable_entree = 222;
+// verification_variable_entree(variable_entree); //renvoie normalemnt le typeof de la variable en question
 
 
-variable_additionner(12, 12, 12, 12, 12, 12)
+// variable_additionner(12, 12, 12, 12, 12, 12)
 
 
 // interface et alias 

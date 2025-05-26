@@ -13,15 +13,15 @@ interface point_fail {
 }
 
 
-let challenge_verite : string[] = []
+let challenge_verite: string[] = []
 
-let challenge_action : string[] = []
-
-
+let challenge_action: string[] = []
 
 
 
- challenge_action = [
+
+
+challenge_action = [
     "Fais 10 pompes immédiatement.",
     "Envoie un message embarrassant à la 3e personne de ta liste de contacts.",
     "Fais une vidéo de toi en train de danser sur une chanson ridicule.",
@@ -229,11 +229,11 @@ challenge_verite = [
 // challenge 
 // ensemble de defis realisable par le joueur 
 
-export const choix_challenge = (choix: string):any => {
+export const choix_challenge = (choix: string): any => {
 
     if (choix === 'action') {
-        return console.log('vous avez choisir ' + choix)
+        return console.log(challenge_action[Math.floor(Math.random() * 101)])
     } else {
-        return console.log('vous avez choisi ' + choix)
+        return console.log(challenge_verite[Math.floor(Math.random() * 101)])
     }
 }
