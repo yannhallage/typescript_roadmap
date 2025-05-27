@@ -1,3 +1,5 @@
+import { choix_challenge } from './program_ts/program_export/challenge';
+
 
 // les types speciaux
 // deja ici on veut faire reference a certain types 
@@ -262,7 +264,14 @@ const Myfunction_second = (parmas: number): any => {
 // le DOM
 
 let btn_action = document.querySelector('.btn_action') as HTMLButtonElement
+let btn_verite = document.querySelector('.btn_verite') as HTMLButtonElement
 
 btn_action.addEventListener('click', () => {
     console.log("je suis un bouton")
+    choix_challenge('action')
+})
+
+btn_verite.addEventListener('click', () => {
+    console.log("je suis un bouton de verite")
+    choix_challenge('verité')
 })

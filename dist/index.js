@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const challenge_1 = require("./program_ts/program_export/challenge");
 // les types speciaux
 // deja ici on veut faire reference a certain types 
 // comme le any qui accept n'importe quel type possible
@@ -138,6 +140,12 @@ const Myfunction_second = (parmas) => {
 // interface ,type ,aliase, enum et quelque bonne pratique des fonctions 
 // le DOM
 let btn_action = document.querySelector('.btn_action');
+let btn_verite = document.querySelector('.btn_verite');
 btn_action.addEventListener('click', () => {
     console.log("je suis un bouton");
+    (0, challenge_1.choix_challenge)('action');
+});
+btn_verite.addEventListener('click', () => {
+    console.log("je suis un bouton de verite");
+    (0, challenge_1.choix_challenge)('verité');
 });
