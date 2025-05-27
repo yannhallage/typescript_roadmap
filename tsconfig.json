@@ -3,8 +3,13 @@
     "target": "es6",
     "module": "none",
     "strict": true,
-    "outDir": "./",
+    "rootDir": ".",           
+    "outDir": "dist",
     "sourceMap": false
   },
-  "include": ["index.ts"]
+  "include": [
+    "index.ts",
+    "program_export/**/*.ts"
+  ],
+  "exclude": ["dist"]
 }
