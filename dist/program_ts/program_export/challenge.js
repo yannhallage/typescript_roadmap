@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.choix_challenge = void 0;
 let challenge_verite = [];
 let challenge_action = [];
 challenge_action = [
@@ -204,7 +201,7 @@ challenge_verite = [
 ];
 // challenge 
 // ensemble de defis realisable par le joueur 
-const choix_challenge = (choix) => {
+export const choix_challenge = (choix) => {
     if (choix === 'action') {
         return console.log(challenge_action[Math.floor(Math.random() * 101)]);
     }
@@ -212,4 +209,3 @@ const choix_challenge = (choix) => {
         return console.log(challenge_verite[Math.floor(Math.random() * 101)]);
     }
 };
-exports.choix_challenge = choix_challenge;
